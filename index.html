@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ammar Shaikh — MERN Stack Developer, freelancer, and 15+ project shipper." />
+  <title>Ammar Shaikh — Studio · MERN Developer & Freelancer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"><span class="cursor-label" id="cursorLabel"></span></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="pre-mark">Ammar<em>Shaikh</em></div>
+    <div class="pre-bar"><span id="preBar"></span></div>
+    <div class="pre-count"><span id="preCount">00</span> <em>—</em> Loading studio</div>
+  </div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Fixed section indicator -->
+  <div class="section-indicator" id="sectionIndicator">
+    <div class="si-num"><span id="siNum">01</span> <em>/ 06</em></div>
+    <div class="si-label" id="siLabel">Intro</div>
+  </div>
+
+  <!-- Nav -->
+  <header class="nav">
+    <a href="#hero" class="brand" data-cursor="home">
+      <span class="brand-dot"></span>
+      <span>Ammar<em>.</em>Shaikh</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Timeline</a>
+      <a href="#testimonials">Voices</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="mode-toggle" id="modeToggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-sun sun-icon"></i>
+        <i class="fa-solid fa-moon moon-icon"></i>
+      </button>
+      <a class="nav-cta" href="mailto:ammar15102004@gmail.com" data-cursor="write">
+        <span class="nav-cta-inner">
+          <span>Hire me</span>
+          <span>Let's talk</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero" data-section="01" data-label="Intro">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-grain"></div>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-tag" data-hero-el>
+          <span class="dot"></span>
+          <span>Available for freelance</span>
+          <span class="dv">·</span>
+          <span>Currently on Upwork</span>
+        </div>
+
+        <h1 class="hero-title" data-hero-el>
+          <div class="line"><span data-split>Building</span></div>
+          <div class="line"><span data-split class="ital-line">full‑stack</span></div>
+          <div class="line"><span data-split>digital things,</span></div>
+          <div class="line"><span data-split>with care.</span></div>
+        </h1>
+
+        <p class="hero-sub" data-hero-el>
+          Hi — I'm <strong>Ammar Shaikh</strong>, a MERN developer & freelancer from Surat.
+          Shipping production apps at <strong>CoderKube Technology</strong> and running independent
+          builds via Upwork and direct clients.
+        </p>
+
+        <div class="hero-cta" data-hero-el>
+          <a href="#work" class="btn btn-primary" data-cursor="view">
+            <span>See selected work</span>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost" data-cursor="write">
+            <span>Start a conversation</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-stats" data-hero-el>
+          <div class="stat">
+            <div class="num"><span data-count="15">0</span><em>+</em></div>
+            <div class="lbl">Production projects<br/>shipped at CoderKube</div>
+          </div>
+          <div class="stat">
+            <div class="num"><span data-count="3">0</span><em>+</em></div>
+            <div class="lbl">Large freelance<br/>builds delivered</div>
+          </div>
+          <div class="stat">
+            <div class="num"><span data-count="10">0</span><em>K+</em></div>
+            <div class="lbl">Users on APIs<br/>I've engineered</div>
+          </div>
+          <div class="stat">
+            <div class="num"><span data-count="2">0</span><em>yrs</em></div>
+            <div class="lbl">Building for the web<br/>professionally</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint" data-hero-el>
+      <span>Scroll to explore</span>
+      <div class="drop"></div>
+    </div>
+  </section>
+
+  <!-- ==================== MARQUEE 1 ==================== -->
+  <div class="mq mq-1">
+    <div class="mq-track">
+      <span>MERN Developer</span><em>◇</em>
+      <span>UX Minded</span><em>◇</em>
+      <span>Freelancer</span><em>◇</em>
+      <span>Based in Surat</span><em>◇</em>
+      <span>Available now</span><em>◇</em>
+      <span>MERN Developer</span><em>◇</em>
+      <span>UX Minded</span><em>◇</em>
+      <span>Freelancer</span><em>◇</em>
+      <span>Based in Surat</span><em>◇</em>
+      <span>Available now</span><em>◇</em>
+    </div>
+  </div>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="section about" id="about" data-section="02" data-label="About">
+    <div class="section-head">
+      <div class="eyebrow" data-reveal><span>02</span> — About</div>
+      <h2 class="section-title" data-reveal>
+        Engineer by craft, <span class="ital">designer</span> by instinct.
+      </h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-copy">
+        <p data-reveal>
+          I've spent the last <strong>2+ years</strong> building real software. At
+          <strong>CoderKube Technology</strong> I've shipped <strong>15+ production projects</strong>,
+          from JD Web to Ship, both as a solo owner and as part of Agile teams — across the
+          MERN stack, Python and Laravel.
+        </p>
+        <p data-reveal>
+          On the side I run an active <strong>Upwork freelance practice</strong> (currently on a
+          weekly retainer) and have independently delivered <strong>3+ large end‑to‑end projects</strong>
+          — most visibly <em>CrystalStonesMart.com</em>.
+        </p>
+        <p data-reveal>
+          My focus: clean React interfaces, well‑designed REST APIs with JWT + RBAC,
+          MongoDB schemas that scale, and UI people actually enjoy using.
+        </p>
+
+        <div class="about-chips" data-reveal>
+          <span>Surat, Gujarat</span>
+          <span>B.E. Computer Engineering · 2026</span>
+          <span>NASSCOM AI/ML NSQF L5</span>
+          <span>Hindi · English · Gujarati</span>
+        </div>
+      </div>
+
+      <div class="about-card" data-reveal>
+        <div class="ac-corner tl"></div><div class="ac-corner tr"></div>
+        <div class="ac-corner bl"></div><div class="ac-corner br"></div>
+
+        <div class="ac-head">
+          <div class="ac-avatar">AS</div>
+          <div>
+            <div class="ac-name">Ammar Shaikh</div>
+            <div class="ac-role">MERN · Full‑Stack · UX</div>
+          </div>
+        </div>
+
+        <ul class="ac-list">
+          <li><i class="fa-solid fa-code"></i><span>React, Node, Express, MongoDB</span></li>
+          <li><i class="fa-solid fa-cloud"></i><span>Vercel, Firebase, Supabase</span></li>
+          <li><i class="fa-solid fa-shield-halved"></i><span>JWT Auth, RBAC, secure APIs</span></li>
+          <li><i class="fa-solid fa-gauge-high"></i><span>Perf, SEO, responsive UI</span></li>
+        </ul>
+
+        <a class="ac-link" href="#contact" data-cursor="write">
+          <span>Start a project</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H8M17 7v9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section class="section skills" id="skills" data-section="03" data-label="Toolkit">
+    <div class="section-head">
+      <div class="eyebrow" data-reveal><span>03</span> — Toolkit</div>
+      <h2 class="section-title" data-reveal>
+        The <span class="ital">stack</span> I reach for.
+      </h2>
+    </div>
+
+    <div class="skills-block">
+      <div class="skill-col" data-reveal>
+        <div class="skill-col-title">
+          <span>Perfectly Known</span>
+          <small>Daily‑driver stack</small>
+        </div>
+        <div class="chip-grid">
+          <div class="chip"><i class="fa-brands fa-html5"></i>HTML5</div>
+          <div class="chip"><i class="fa-brands fa-css3-alt"></i>CSS3</div>
+          <div class="chip"><i class="fa-brands fa-js"></i>JavaScript</div>
+          <div class="chip"><i class="fa-brands fa-react"></i>React.js</div>
+          <div class="chip"><i class="fa-brands fa-node-js"></i>Node.js</div>
+          <div class="chip"><i class="fa-solid fa-server"></i>Express.js</div>
+          <div class="chip"><i class="fa-solid fa-leaf"></i>MongoDB</div>
+          <div class="chip"><i class="fa-solid fa-database"></i>SQL</div>
+          <div class="chip"><i class="fa-brands fa-bootstrap"></i>Bootstrap</div>
+          <div class="chip"><i class="fa-solid fa-wind"></i>Tailwind</div>
+          <div class="chip"><i class="fa-solid fa-key"></i>JWT Auth</div>
+          <div class="chip"><i class="fa-brands fa-git-alt"></i>Git · GitHub</div>
+        </div>
+      </div>
+
+      <div class="skill-col" data-reveal>
+        <div class="skill-col-title">
+          <span>Working Knowledge</span>
+          <small>Comfortable when the task calls</small>
+        </div>
+        <div class="chip-grid">
+          <div class="chip"><i class="fa-brands fa-java"></i>Java</div>
+          <div class="chip"><i class="fa-brands fa-python"></i>Python</div>
+          <div class="chip"><i class="fa-solid fa-c"></i>C</div>
+          <div class="chip"><i class="fa-brands fa-laravel"></i>Laravel</div>
+          <div class="chip"><i class="fa-brands fa-php"></i>PHP</div>
+          <div class="chip"><i class="fa-solid fa-fire"></i>Firebase</div>
+          <div class="chip"><i class="fa-solid fa-bolt"></i>Supabase</div>
+          <div class="chip"><i class="fa-brands fa-figma"></i>Figma</div>
+        </div>
+      </div>
+
+      <div class="skill-col wide" data-reveal>
+        <div class="skill-col-title">
+          <span>How I work</span>
+          <small>Beyond code</small>
+        </div>
+        <div class="soft-grid">
+          <div class="soft"><span>01</span><h4>Team Collaboration</h4><p>Comfortable in Agile sprints, code reviews, and clear async communication.</p></div>
+          <div class="soft"><span>02</span><h4>Leadership</h4><p>Own solo projects end‑to‑end. Mentor peers on best practices when they ask.</p></div>
+          <div class="soft"><span>03</span><h4>Problem Solving</h4><p>Break complex issues into simple, shippable steps.</p></div>
+          <div class="soft"><span>04</span><h4>Self‑Discipline</h4><p>Consistent delivery. Mostly self‑taught across many stacks.</p></div>
+          <div class="soft"><span>05</span><h4>Fast Learner</h4><p>Ramp quickly — proven across MERN, Python, and Laravel.</p></div>
+          <div class="soft"><span>06</span><h4>Adaptability</h4><p>Slot into any team's workflow and tech stack.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MARQUEE 2 ==================== -->
+  <div class="mq mq-2">
+    <div class="mq-track alt">
+      <span>Selected Work</span><em>✦</em>
+      <span>15+ Projects Shipped</span><em>✦</em>
+      <span>Independent Builds</span><em>✦</em>
+      <span>Real Users</span><em>✦</em>
+      <span>Selected Work</span><em>✦</em>
+      <span>15+ Projects Shipped</span><em>✦</em>
+      <span>Independent Builds</span><em>✦</em>
+      <span>Real Users</span><em>✦</em>
+    </div>
+  </div>
+
+  <!-- ==================== WORK (HORIZONTAL SCROLL) ==================== -->
+  <section class="work" id="work" data-section="04" data-label="Work">
+    <div class="section-head work-head">
+      <div class="eyebrow" data-reveal><span>04</span> — Selected Work</div>
+      <h2 class="section-title" data-reveal>
+        Shipped to <span class="ital">real users</span>.
+      </h2>
+      <p class="section-sub" data-reveal>Scroll horizontally through recent builds.</p>
+    </div>
+
+    <div class="h-scroll" id="hScroll">
+      <div class="h-track" id="hTrack">
+
+        <article class="h-card">
+          <div class="hc-visual">
+            <div class="hc-mock">
+              <div class="mock-bar"><span></span><span></span><span></span><em>crystalstonesmart.com</em></div>
+              <div class="mock-body">
+                <div class="mock-hero"></div>
+                <div class="mock-grid"><div></div><div></div><div></div><div></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="hc-body">
+            <div class="hc-index">01 <em>/ 04</em></div>
+            <div class="hc-tags"><span>MERN</span><span>Live E‑commerce</span><span>Freelance</span></div>
+            <h3>CrystalStonesMart</h3>
+            <p class="hc-sub">B2B wholesale e‑commerce for crystal products — independent MERN build for a paying client.</p>
+            <ul class="hc-points">
+              <li>End‑to‑end platform: catalog, cart, orders, admin analytics</li>
+              <li>Google Auth, JWT sessions, role‑based access control</li>
+              <li>SEO‑ready, mobile‑first UI, 100+ product listings</li>
+            </ul>
+            <div class="hc-actions">
+              <a class="btn btn-primary sm" href="https://crystalstonesmart.com/" target="_blank" rel="noopener" data-cursor="visit">
+                <span>Visit site</span>
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+              <span class="hc-stack">React · Node · Express · Mongo · JWT</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="h-card">
+          <div class="hc-visual">
+            <div class="hc-mock alt">
+              <div class="mock-bar"><span></span><span></span><span></span><em>nutrition-zeta-eight.vercel.app</em></div>
+              <div class="mock-body">
+                <div class="mock-hero"></div>
+                <div class="mock-grid"><div></div><div></div><div></div><div></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="hc-body">
+            <div class="hc-index">02 <em>/ 04</em></div>
+            <div class="hc-tags"><span>React</span><span>Firebase</span><span>Health</span></div>
+            <h3>Nutrition Mate</h3>
+            <p class="hc-sub">Health & wellness platform with BMI tracking, calorie‑based recipes, and a supplement store.</p>
+            <ul class="hc-points">
+              <li>Auth, user records, feedback system, admin panel</li>
+              <li>Calorie planner + maintenance suggestions</li>
+              <li>Firestore data model + analytics dashboards</li>
+            </ul>
+            <div class="hc-actions">
+              <a class="btn btn-primary sm" href="https://nutrition-zeta-eight.vercel.app/" target="_blank" rel="noopener" data-cursor="visit">
+                <span>Visit site</span>
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+              <span class="hc-stack">React · Firebase · Firestore · Vercel</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="h-card">
+          <div class="hc-visual">
+            <div class="hc-mock dark">
+              <div class="mock-bar"><span></span><span></span><span></span><em>coderkube · JD Web · Ship</em></div>
+              <div class="mock-body">
+                <div class="mock-hero"></div>
+                <div class="mock-grid"><div></div><div></div><div></div><div></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="hc-body">
+            <div class="hc-index">03 <em>/ 04</em></div>
+            <div class="hc-tags"><span>MERN</span><span>Python</span><span>Laravel</span><span>Team</span></div>
+            <h3>CoderKube — 15+ Builds</h3>
+            <p class="hc-sub">Client and in‑house projects delivered as solo owner or in Agile teams — including JD Web and Ship.</p>
+            <ul class="hc-points">
+              <li>15+ REST APIs with JWT + RBAC serving 10K+ users</li>
+              <li>MongoDB schema redesigns → ~30% faster APIs</li>
+              <li>Cross‑stack delivery: MERN, Python, Laravel</li>
+            </ul>
+            <div class="hc-actions">
+              <a class="btn btn-primary sm" href="#contact" data-cursor="write">
+                <span>Request case study</span>
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+              <span class="hc-stack">Mongo · Express · React · Node · Laravel</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="h-card">
+          <div class="hc-visual">
+            <div class="hc-mock warm">
+              <div class="mock-bar"><span></span><span></span><span></span><em>Upwork · Ongoing</em></div>
+              <div class="mock-body">
+                <div class="mock-hero"></div>
+                <div class="mock-grid"><div></div><div></div><div></div><div></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="hc-body">
+            <div class="hc-index">04 <em>/ 04</em></div>
+            <div class="hc-tags"><span>Upwork</span><span>Retainer</span><span>Freelance</span></div>
+            <h3>Ongoing Upwork Retainer</h3>
+            <p class="hc-sub">Active weekly engagement — full‑stack features, bug fixes, and API integrations for a foreign client.</p>
+            <ul class="hc-points">
+              <li>3+ large freelance builds delivered independently</li>
+              <li>Own scope, timeline, and client communication</li>
+              <li>Open to new part‑time / project‑based contracts</li>
+            </ul>
+            <div class="hc-actions">
+              <a class="btn btn-primary sm" href="#contact" data-cursor="write">
+                <span>Hire for a project</span>
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+              <span class="hc-stack">MERN · REST · JWT · Vercel · GitHub</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="h-end">
+          <div class="he-mark">✦</div>
+          <div class="he-text">End of selected work.<br/><a href="#contact">Let's build the next one.</a></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="h-progress" aria-hidden="true">
+      <div class="h-progress-bar" id="hProgressBar"></div>
+    </div>
+  </section>
+
+  <!-- ==================== TIMELINE ==================== -->
+  <section class="section experience" id="experience" data-section="05" data-label="Timeline">
+    <div class="section-head">
+      <div class="eyebrow" data-reveal><span>05</span> — Journey</div>
+      <h2 class="section-title" data-reveal>
+        Experience & <span class="ital">education</span>.
+      </h2>
+    </div>
+
+    <div class="timeline-wrap">
+      <div class="tl-col">
+        <h3 class="tl-heading" data-reveal><i class="fa-solid fa-briefcase"></i> Experience</h3>
+        <div class="tl">
+          <div class="tl-item" data-reveal>
+            <div class="tl-date">Oct 2025 — Present</div>
+            <div class="tl-body">
+              <h4>MERN Stack Developer</h4>
+              <p class="tl-org">CoderKube Technology</p>
+              <p>Shipped 15+ production projects (JD Web, Ship, more). 15+ REST APIs, MongoDB perf tuning, Agile team delivery.</p>
+            </div>
+          </div>
+          <div class="tl-item" data-reveal>
+            <div class="tl-date">2024 — Present</div>
+            <div class="tl-body">
+              <h4>Freelance MERN Developer</h4>
+              <p class="tl-org">Upwork &amp; direct clients</p>
+              <p>3+ large freelance builds including CrystalStonesMart. Currently on an active Upwork weekly retainer.</p>
+            </div>
+          </div>
+          <div class="tl-item" data-reveal>
+            <div class="tl-date">2024 — 2025</div>
+            <div class="tl-body">
+              <h4>Full‑Stack Developer <em>(Training)</em></h4>
+              <p class="tl-org">Red &amp; White Multimedia Education</p>
+              <p>Intensive full‑stack program: MERN, deployment, auth, modern frontend workflows.</p>
+            </div>
+          </div>
+          <div class="tl-item" data-reveal>
+            <div class="tl-date">Aug 2024</div>
+            <div class="tl-body">
+              <h4>AI‑ML Engineer — NSQF Level 5</h4>
+              <p class="tl-org">NASSCOM · Skill India</p>
+              <p>Government‑recognized certification in applied AI & ML fundamentals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-col">
+        <h3 class="tl-heading" data-reveal><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+        <div class="tl">
+          <div class="tl-item" data-reveal>
+            <div class="tl-date">2022 — 2026</div>
+            <div class="tl-body">
+              <h4>B.E. in Computer Engineering</h4>
+              <p class="tl-org">S.S.A.S.I.T., Surat · G.T.U.</p>
+              <p>First Class with Distinction · CGPA 7.5+ · Graduating April 2026.</p>
+            </div>
+          </div>
+          <div class="tl-item" data-reveal>
+            <div class="tl-date">Aug 2025</div>
+            <div class="tl-body">
+              <h4>Full Stack Web Development</h4>
+              <p class="tl-org">Red &amp; White Skill Education</p>
+              <p>Certified full‑stack web development program.</p>
+            </div>
+          </div>
+          <div class="tl-item" data-reveal>
+            <div class="tl-date">2021 — 2022</div>
+            <div class="tl-body">
+              <h4>H.S.C.</h4>
+              <p class="tl-org">G.S.E.B.</p>
+              <p>Higher Secondary — Science stream.</p>
+            </div>
+          </div>
+          <div class="tl-item" data-reveal>
+            <div class="tl-date">2019 — 2020</div>
+            <div class="tl-body">
+              <h4>S.S.C.</h4>
+              <p class="tl-org">G.S.E.B.</p>
+              <p>Secondary School Certificate.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="section testimonials" id="testimonials" data-section="06" data-label="Voices">
+    <div class="section-head">
+      <div class="eyebrow" data-reveal><span>06</span> — Kind words</div>
+      <h2 class="section-title" data-reveal>
+        What clients & mentors <span class="ital">say</span>.
+      </h2>
+    </div>
+
+    <div class="t-grid">
+      <div class="t-card" data-reveal>
+        <div class="t-quote">"</div>
+        <p>Best experience! Ammar made our productivity and advertising easy with Crystal Stones Mart. Highly efficient and reliable.</p>
+        <div class="t-meta">
+          <strong>Adjaz Shaikh</strong>
+          <span>Owner, Crystal Stones Mart</span>
+        </div>
+      </div>
+      <div class="t-card" data-reveal>
+        <div class="t-quote">"</div>
+        <p>Using Ammar's Nutrition Mate I manage health check‑ups for my personal clients efficiently. Truly helpful for fitness planning.</p>
+        <div class="t-meta">
+          <strong>Faruk Shaikh</strong>
+          <span>Gym Trainer</span>
+        </div>
+      </div>
+      <div class="t-card" data-reveal>
+        <div class="t-quote">"</div>
+        <p>Ammar has solid knowledge of working with live websites and REST APIs. Great understanding of full‑stack development.</p>
+        <div class="t-meta">
+          <strong>Piyush Nakrani</strong>
+          <span>React & Node Mentor</span>
+        </div>
+      </div>
+      <div class="t-card" data-reveal>
+        <div class="t-quote">"</div>
+        <p>Ammar is a professional front‑end developer. He delivers quality and perfection.</p>
+        <div class="t-meta">
+          <strong>Hardik Patel</strong>
+          <span>Front‑End Mentor</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MARQUEE 3 ==================== -->
+  <div class="mq mq-3">
+    <div class="mq-track">
+      <span>Let's Talk</span><em>◇</em>
+      <span>Open for Freelance</span><em>◇</em>
+      <span>Remote Friendly</span><em>◇</em>
+      <span>Reply within 24h</span><em>◇</em>
+      <span>Let's Talk</span><em>◇</em>
+      <span>Open for Freelance</span><em>◇</em>
+      <span>Remote Friendly</span><em>◇</em>
+      <span>Reply within 24h</span><em>◇</em>
+    </div>
+  </div>
+
+  <!-- ==================== CONTACT (BIG TEXT FILL) ==================== -->
+  <section class="contact" id="contact" data-section="07" data-label="Contact">
+    <div class="contact-inner">
+      <div class="eyebrow" data-reveal><span>07</span> — Contact</div>
+
+      <h2 class="fill-text" id="fillText">
+        <span>Let's build</span>
+        <span>something</span>
+        <span class="ital">people love.</span>
+      </h2>
+
+      <p class="contact-lead" data-reveal>
+        Freelance projects, full‑time opportunities, or just a chat — my inbox is open.
+      </p>
+
+      <div class="contact-grid">
+        <a class="c-card" href="mailto:ammar15102004@gmail.com" data-reveal data-cursor="write">
+          <div class="c-lbl">Email</div>
+          <div class="c-val">ammar15102004@gmail.com</div>
+          <div class="c-arrow"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></div>
+        </a>
+        <a class="c-card" href="tel:+919898326125" data-reveal data-cursor="call">
+          <div class="c-lbl">Phone</div>
+          <div class="c-val">+91 98983 26125</div>
+          <div class="c-arrow"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></div>
+        </a>
+        <a class="c-card" href="https://wa.me/919898326125" target="_blank" rel="noopener" data-reveal data-cursor="chat">
+          <div class="c-lbl">WhatsApp</div>
+          <div class="c-val">Chat instantly</div>
+          <div class="c-arrow"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></div>
+        </a>
+        <a class="c-card" href="https://www.linkedin.com/in/ammar-shaikh-747897250" target="_blank" rel="noopener" data-reveal data-cursor="visit">
+          <div class="c-lbl">LinkedIn</div>
+          <div class="c-val">/in/ammar-shaikh-747897250</div>
+          <div class="c-arrow"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></div>
+        </a>
+        <a class="c-card" href="https://github.com/ammar3040" target="_blank" rel="noopener" data-reveal data-cursor="visit">
+          <div class="c-lbl">GitHub</div>
+          <div class="c-val">github.com/ammar3040</div>
+          <div class="c-arrow"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></div>
+        </a>
+        <a class="c-card" href="https://www.instagram.com/ammar_3040/" target="_blank" rel="noopener" data-reveal data-cursor="visit">
+          <div class="c-lbl">Instagram</div>
+          <div class="c-val">@ammar_3040</div>
+          <div class="c-arrow"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></div>
+        </a>
+      </div>
+
+      <div class="loc" data-reveal>
+        <i class="fa-solid fa-location-dot"></i> Rander, Surat, Gujarat — 395005
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="f-inner">
+      <div class="f-left">
+        <div class="f-mark">Ammar<em>Shaikh</em></div>
+        <div class="f-copy">© <span id="year"></span> — Built by hand with HTML, CSS, JS, Three.js & GSAP.</div>
+      </div>
+      <div class="f-social">
+        <a href="https://www.linkedin.com/in/ammar-shaikh-747897250" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/ammar3040" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/ammar_3040/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/919898326125" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+      "lenis": "./vendor/lenis.mjs"
+    }
+  }
+  </script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
